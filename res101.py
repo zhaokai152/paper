@@ -18,7 +18,7 @@ class DownSample(nn.Module):
 
 
 class ResNet101(nn.Module):
-    def __init__(self, classes_num):            # 指定分类数
+    def __init__(self, classes_num):            
         super(ResNet101, self).__init__()
         self.pre = nn.Sequential(
             nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3, bias=False),
