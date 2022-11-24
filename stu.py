@@ -7,8 +7,8 @@ from tqdm import tqdm
 from KD.Net import TeacherNet, StudentNet, Student2Net
 
 if __name__ == '__main__':
-    INPUT_SIZE = 112
-    BATCH_SIZE = 32
+    INPUT_SIZE = null
+    BATCH_SIZE = 64
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     studentNet = Student2Net(classes=10)
