@@ -10,7 +10,7 @@ from KD.Net import TeacherNet, StudentNet
 
 if __name__ == '__main__':
     INPUT_SIZE = null
-    BATCH_SIZE = 32
+    BATCH_SIZE = 64
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     teacherNet = TeacherNet(classes=10)
